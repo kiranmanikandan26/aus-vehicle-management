@@ -6,6 +6,21 @@
 <p align="center" style="font-size:18px;">
 A complete analysis of Australian vehicle resale prices using R 📊  
 </p>
+<h2 style="color:#FF6F61;">🔍 Research Question</h2>
+
+<div style="background:#FFF4F2; border-left:4px solid #FF6F61; padding:14px; border-radius:6px; margin-bottom:10px;">
+
+<p style="font-size:16px; margin:0;">
+<b>Research Question (RQ):</b><br>
+<i>“Is there a correlation between vehicle Kilometres and Price?”</i>
+</p>
+
+<p style="margin-top:10px;">
+This question investigates whether vehicle usage, measured through odometer readings, 
+has a statistically significant relationship with resale value in the Australian automotive market.
+Understanding this relationship helps reveal real pricing trends and buyer behaviour.
+</p>
+
 
 <hr style="border: 1px solid #ddd;">
 
@@ -23,20 +38,6 @@ A complete analysis of Australian vehicle resale prices using R 📊
 📌 <b>Data Rows:</b> <font color="lightgreen">16,734</font><br>
 📌 <b>Header Rows:</b> 1<br>
 📌 <b>Total Columns:</b> <font color="orange">19 (A → S)</font><br>
-</p>
-<h2 style="color:#FF6F61;">🔍 Research Question</h2>
-
-<div style="background:#FFF4F2; border-left:4px solid #FF6F61; padding:14px; border-radius:6px; margin-bottom:10px;">
-
-<p style="font-size:16px; margin:0;">
-<b>Research Question (RQ):</b><br>
-<i>“Is there a correlation between vehicle Kilometres and Price?”</i>
-</p>
-
-<p style="margin-top:10px;">
-This question investigates whether vehicle usage, measured through odometer readings, 
-has a statistically significant relationship with resale value in the Australian automotive market.
-Understanding this relationship helps reveal real pricing trends and buyer behaviour.
 </p>
 
 </div>
