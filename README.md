@@ -113,6 +113,6 @@ https://www.kaggle.com/datasets/nelgiriyewithana/australian-vehicle-prices
 
 <!-- Footer -->
 <p align="center" style="font-size:14px; color:#888;">
-Made with ❤️ using R and tidyverse  
+Made with ❤️ using <font color="skyblue"><b>R</b></font> and <font color="orange"><b>tidyverse</b></font>
 </p>
 
