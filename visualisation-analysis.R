@@ -53,3 +53,8 @@ tibble(
   p_value = c(cor_pearson$p.value, cor_spearman$p.value)
 ) %>%
   write_csv("correlation-results.csv")
+
+# This quick check prints the structure of the cleaned data
+print("Data summary (added for debugging and verification):")
+print(glimpse(df))
+
