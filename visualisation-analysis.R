@@ -1,7 +1,8 @@
 library(tidyverse)
 
 # Read the dataset
-df <- read_csv("Australian Vehicle Prices.csv") %>%
+# Clean and convert the 'Kilometres' and 'Price' columns to numeric values, removing any non-numeric characters.
+vehicle_data <- read_csv("Australian Vehicle Prices.csv") %>%
   mutate(
     Kilometres = str_replace_all(Kilometres, "[^0-9\\.]", "") %>% as.numeric(), # This regreular expression changes the kilometres into numeric values for calculation
     Price = as.numeric(Price)
@@ -9,7 +10,7 @@ df <- read_csv("Australian Vehicle Prices.csv") %>%
   drop_na(Kilometres, Price)
 
 # Scatterplot with the discussed regression line
-p_scatter <- df %>%
+scatter_plot <- vehicle_data %>%
   ggplot(aes(x = Kilometres, y = Price)) +
   geom_point(alpha = 0.3, size = 1) +
   geom_smooth(method = "lm", colour = "blue") +
@@ -23,7 +24,7 @@ p_scatter <- df %>%
 ggsave("km-price-scatter.png", p_scatter, width = 8, height = 6)
 
 # Generate Histogram of kilometres and the count
-p_hist <- df %>%
+histogram_plot <- vehicle_data %>%
   ggplot(aes(x = Kilometres)) +
   geom_histogram(bins = 50, fill = "lightblue", colour = "black") +
   labs(
@@ -35,7 +36,7 @@ p_hist <- df %>%
 
 ggsave("km-histogram.png", p_hist, width = 8, height = 6)
 
-# Correlation - Pearson as well as Spearman test
+# Perform Pearson and Spearman correlation tests to analyze the relationship between 'Kilometres' and 'Price'.
 cor_pearson <- cor.test(df$Kilometres, df$Price, method = "pearson")
 cor_spearman <- cor.test(df$Kilometres, df$Price, method = "spearman")
 
