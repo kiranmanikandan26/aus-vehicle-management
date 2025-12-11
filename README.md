@@ -7,7 +7,6 @@ This project repository is about the latest information on car prices in Austral
 
 <p align="center" style="font-size:18px;">
 A complete analysis of Australian vehicle resale prices using R 📊  
-Includes data cleaning, visualisation, statistical testing, and insights.
 </p>
 
 <hr style="border: 1px solid #ddd;">
@@ -117,6 +116,3 @@ https://www.kaggle.com/datasets/nelgiriyewithana/australian-vehicle-prices
 Made with ❤️ using R and tidyverse  
 </p>
 
-
-
-#### Dataset Source Link: https://www.kaggle.com/datasets/nelgiriyewithana/australian-vehicle-prices
