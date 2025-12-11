@@ -1,3 +1,10 @@
+
+# ------------------------------------------------------------------------------
+# Script: visualisation-analysis.R
+# Purpose: Visualise and analyse the relationship between Kilometres and Price
+# Updated by: Venu Pinnapureddy added documentation and basic data summaries
+# ------------------------------------------------------------------------------
+
 library(tidyverse)
 
 # Read the dataset
